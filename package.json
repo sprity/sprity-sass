@@ -38,15 +38,14 @@
     "css-sprite"
   ],
   "dependencies": {
-    "bluebird": "^2.9.16",
-    "fs-extra": "^0.16.5"
+    "bluebird": "^2.9.24",
+    "fs-extra": "^0.18.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
     "cssesc": "^0.1.0",
     "handlebars": "^3.0.1",
-    "mocha": "^2.1.0",
-    "node-sass": "^2.0.1",
+    "mocha": "^2.2.4",
     "prettydiff": "^1.11.11"
   }
 }
