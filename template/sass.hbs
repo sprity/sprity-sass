@@ -1,0 +1,41 @@
+{{#each layouts}}
+  {{#each layout.items}}
+${{#if ../../opt.split}}{{../../name}}-{{/if}}{{meta.name}}: {{x}} {{y}} {{width}} {{height}}
+  {{/each}}
+{{/each}}
+
+=sprite-width($sprite)
+  width: nth($sprite, 3)
+
+=sprite-height($sprite)
+  height: nth($sprite, 4)
+
+=sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 1)
+  $sprite-offset-y: nth($sprite, 2)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+=sprite($sprite, $display: block)
+  +sprite-position($sprite)
+  background-repeat: no-repeat
+  overflow: hidden
+  display: $display
+  +sprite-width($sprite)
+  +sprite-height($sprite)
+}
+
+{{#each layouts}}
+{{#each sprites}}
+{{#unless dpi}}
+{{../../../indicator}}{{cssesc ../../classname}}
+  background-image: url('{{escimage url}}')
+{{/unless}}
+{{#if dpi}}
+
+@media (-webkit-min-device-pixel-ratio: {{ratio}}), (min-resolution: {{dpi}}dpi)
+  {{../../../indicator}}{{cssesc ../../classname}}
+    background-image: url('{{escimage url}}')
+    background-size: {{width}} {{height}}
+{{/if}}
+{{/each}}
+{{/each}}
