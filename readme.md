@@ -1,25 +1,25 @@
-# css-sprite-sass
+# sprity-sass
 
-[![NPM version](https://badge.fury.io/js/css-sprite-sass.svg)](http://badge.fury.io/js/css-sprite-sass) [![Build Status](https://travis-ci.org/aslansky/css-sprite-sass.svg?branch=master)](https://travis-ci.org/aslansky/css-sprite-sass) [![Dependencies](https://david-dm.org/aslansky/css-sprite-sass.svg)](https://david-dm.org/aslansky/css-sprite-sass)
+[![NPM version](https://badge.fury.io/js/sprity-sass.svg)](http://badge.fury.io/js/sprity-sass) [![Build Status](https://travis-ci.org/sprity/sprity-sass.svg?branch=master)](https://travis-ci.org/sprity/sprity-sass) [![Dependencies](https://david-dm.org/sprity/sprity-sass.svg)](https://david-dm.org/sprity/sprity-sass)
 
-> A sass/scss style processor for [css-sprite](https://npmjs.org/package/css-sprite)
+> A sass/scss style processor for [sprity](https://npmjs.org/package/sprity)
 
 ## Requirements
 
-- [css-sprite](https://npmjs.org/package/css-sprite) version >= 1.0
+- [sprity](https://npmjs.org/package/sprity) version >= 1.0
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/css-sprite-sass)
+Install with [npm](https://npmjs.org/package/sprity-sass)
 
 ```
-npm install css-sprite css-sprite-sass --save
+npm install sprity sprity-sass --save
 ```
 
-If you want to use `css-sprite-sass` with the command line interface of `css-sprite` install it globally.
+If you want to use `sprity-sass` with the command line interface of `sprity` install it globally.
 
 ```
-npm install css-sprite css-sprite-sass -g
+npm install sprity sprity-sass -g
 ```
 
 ## Options
@@ -31,17 +31,17 @@ npm install css-sprite css-sprite-sass -g
 On commandline:
 
 ```sh
-css-sprite out/ src/*.png -s style.scss -p css-sprite-sass --style-type scss
+sprity out/ src/*.png -s style.scss -p sass --style-type scss
 ```
 
 In JavaScript:
 
 ```js
-var sprite = require('css-sprite');
+var sprite = require('sprity');
 sprite.create({
   ...
   style: 'style.scss',
-  processor: 'css-sprite-sass'
+  processor: 'sass'
   'style-type': 'scss'
   ...
 }, function () {
@@ -81,4 +81,4 @@ sprite.create({
 
 ## More
 
-See [css-sprite](https://npmjs.org/package/css-sprite) documentation
+See [sprity](https://npmjs.org/package/sprity) documentation

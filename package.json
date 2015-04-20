@@ -1,19 +1,19 @@
 {
-  "name": "css-sprite-sass",
+  "name": "sprity-sass",
   "version": "1.0.0",
-  "description": "scss/sass style processor for css-sprite",
+  "description": "scss/sass style processor for sprity",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aslansky/css-sprite-sass.git"
+    "url": "https://github.com/sprity/sprity-sass.git"
   },
-  "homepage": "https://github.com/aslansky/css-sprite-sass",
+  "homepage": "https://github.com/sprity/sprity-sass",
   "bugs": {
-    "url": "https://github.com/aslansky/css-sprite-sass/issues"
+    "url": "https://github.com/sprity/sprity-sass/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/aslansky/css-sprite-sass/blob/master/LICENSE-MIT"
+      "url": "https://github.com/sprity/sprity-sass/blob/master/LICENSE-MIT"
     }
   ],
   "author": {
