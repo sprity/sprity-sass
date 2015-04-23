@@ -65,7 +65,7 @@ var fixture = [{
   }]
 }];
 
-describe('css-sprite-sass', function () {
+describe('sprity-sass', function () {
   it('should be beautifyable', function () {
     sassProc.isBeautifyable({}).should.be.true;
   });
