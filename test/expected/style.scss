@@ -1,5 +1,5 @@
-$png: 0 0 136 136;
-$jpg: 0 136 520 520;
+$png: -0px -0px 136px 136px;
+$jpg: -0px -136px 520px 520px;
 @mixin sprite-width($sprite) {
     width: nth($sprite, 3);
 }
