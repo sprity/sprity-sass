@@ -5,6 +5,7 @@ var should = require('chai').should();
 var cssesc = require('cssesc');
 var Handlebars = require('handlebars');
 var prettydiff = require('prettydiff');
+var ratio = 0.5;
 
 Handlebars.registerHelper('cssesc', function (value) {
   return value && value.length > 0 ? cssesc(value, {isIdentifier: true}) : '';
@@ -14,6 +15,10 @@ Handlebars.registerHelper('escimage', function (img) {
   return img.replace(/['"\(\)\s]/g, function encodeCssUri (chr) {
     return '%' + chr.charCodeAt(0).toString(16);
   });
+});
+
+Handlebars.registerHelper('baseDim', function (size) {
+  return Math.round(size * ratio);
 });
 
 require('mocha');

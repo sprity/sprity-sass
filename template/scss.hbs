@@ -1,6 +1,6 @@
 {{#each layouts}}
   {{#each layout.items}}
-    ${{#if ../../opt.split}}{{cssesc ../../name}}-{{/if}}{{cssesc meta.name}}: -{{x}}px -{{y}}px {{width}}px {{height}}px;
+    ${{#if ../../opt.split}}{{cssesc ../../name}}-{{/if}}{{cssesc meta.name}}: -{{baseDim x}}px -{{baseDim y}}px {{baseDim width}}px {{baseDim height}}px;
   {{/each}}
 {{/each}}
 
@@ -44,7 +44,7 @@
     {{../../indicator}}{{cssesc ../classname}} {
       background-image: url('{{escimage url}}');
       {{#if dpi}}
-      background-size: {{width}}px {{height}}px;
+      background-size: {{baseWidth}}px {{baseHeight}}px;
       {{/if}}
     }
     {{#if dpi}}
