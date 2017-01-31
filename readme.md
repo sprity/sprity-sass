@@ -25,6 +25,7 @@ npm install sprity sprity-sass -g
 ## Options
 
 * **style-type:** Eighter scss or sass. Defaults to scss.
+* **templateSass:** Path to custom template. Facultative.
 
 ## Usage
 

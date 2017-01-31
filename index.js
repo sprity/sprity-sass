@@ -6,6 +6,11 @@ var path = require('path');
 
 var getTemplate = function (opt) {
   var type = opt['style-type'] ? opt['style-type'] : 'scss';
+
+  if (opt.templateSass) {
+    return fs.readFileAsync(path.join(process.cwd(), opt.templateSass), 'utf8');
+  }
+
   return fs.readFileAsync(path.join(__dirname, 'template', type + '.hbs'), 'utf8');
 };
 
