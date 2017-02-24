@@ -4,6 +4,15 @@ ${{#if ../../opt.split}}{{cssesc ../../name}}-{{/if}}{{cssesc meta.name}}: -{{ba
   {{/each}}
 {{/each}}
 
+{{#each layouts}}
+  {{#each sprites}}
+    {{#unless dpi}}
+    ${{cssesc ../../classname}}-baseWidth: {{baseWidth}}px
+    ${{cssesc ../../classname}}-baseHeight: {{baseHeight}}px
+    {{/unless}}
+  {{/each}}
+{{/each}}
+
 =sprite-width($sprite)
   width: nth($sprite, 3)
 
